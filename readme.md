@@ -21,6 +21,12 @@ Future extensions:
 - add a better install method
 
 
+# What it does
+
+What it looks like:
+- ![Screenshot 1](<images/Screenshot 2025-11-04 at 6.54.52 AM.png>)
+- ![Screenshot 2](<images/Screenshot 2025-11-04 at 6.55.06 AM.png>)
+
 # Usage
 ## Tampermonkey Install Instructions
 
@@ -31,30 +37,25 @@ Future extensions:
    - [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
    - Or visit [tampermonkey.net](https://www.tampermonkey.net/) for other browsers.
 
-2. **In Chrome, enable "Allow access to file URLs" for Tampermonkey (if needed)**
+1. **In Chrome, enable "Allow access to file URLs" for Tampermonkey (if needed)**
 
    - Open `chrome://extensions`
    - Find Tampermonkey in the list
-   - Make sure the toggle for **"Allow access to file URLs"** is enabled (if your script needs it)
-   - To ensure user scripts work as expected, also verify Tampermonkey is **enabled** and that "Allow in Incognito" is toggled on if you want the script to work in Incognito mode
+   - To ensure user scripts work as expected, also verify Tampermonkey is **enabled**
 
-3. **Enable "Allow user scripts" in Chrome Extensions settings** (Chrome 2024+):
+1. **Enable "Allow user scripts" in Chrome Extensions settings** (Chrome 2024+):
 
    - Go to `chrome://extensions`
    - At the top left, click the menu button (☰) and select **User scripts**
    - Make sure "Allow user scripts" is turned **On**
 
-4. **Click the Tampermonkey extension icon and select 'Create a new script...'**
+4. Visit the [raw script file](https://github.com/jacobboy/tm-scripts/raw/refs/heads/main/gmail-sender-domain-visibility.user.js) and click Install
 
-5. **Replace the default contents with the script from this repository**
-
-6. **Save the script (File > Save, or `Ctrl+S`)**
-
-7. **Reload Gmail and verify that the script is running**
+1. **Reload Gmail and verify that the script is running**
 
    You should see sender email domains made more prominent, and unknown domains highlighted.
 
-8. **To update or remove the script:**
+1. **To update or remove the script:**
    - Open the Tampermonkey dashboard, find the script in the list, and edit or delete as necessary.
 
 **Note:** Some Gmail interface updates may interfere with the script. If features break, check this repository for updates or submit an issue.
